@@ -1,0 +1,16 @@
+[workspace]
+authors = ["astitau <225897825+astitau@users.noreply.github.com>"]
+channels = ["conda-forge"]
+name = "summer"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.10.*"
+
+[pypi-dependencies]
+summerepi2 = { git = "https://github.com/monash-emu/summer2gen.git", rev = "aad6d4b414db2dbf81ea64e8aece5e0c6cdaa425" }
+pandas = ">=2.3.3, <3"
+jupyterlab = ">=4.5.5, <5"
